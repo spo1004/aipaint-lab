@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI绘画入门:提示词怎么写 - AI绘画实验室</title>
+<meta name="description" content="AI绘画入门:提示词怎么写 很多刚接触AI绘画的朋友，第一反应往往是：“只要我描述得足够详细，就能画出我想要的图。”于是，大家习惯性地堆砌形容词，写下一大段冗长的文字，结果生成的图片要么构图混乱，要么风格完全不对。其实，AI不是读心术大师，…">
+<style>
+body{margin:0;background:#f4f6f9;color:#1c2430;font:15px/1.75 -apple-system,'PingFang SC',sans-serif}
+header.top{background:#16233a;color:#fff;padding:34px 0}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+h1.site{font-size:30px;margin:0;letter-spacing:1px}
+.tag{color:#8fb8e8;margin-top:8px}
+nav.crumbs{font-size:13px;margin:16px 0}
+nav.crumbs a{color:#2f6fd0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px;margin:22px 0}
+article.card{background:#fff;border-radius:10px;padding:20px;box-shadow:0 2px 10px rgba(20,40,80,.07);border-top:3px solid #2f6fd0}
+article.card h2{margin:0 0 8px;font-size:18px}
+article.card h2 a{color:#16233a;text-decoration:none}
+article.card h2 a:hover{color:#2f6fd0}
+.meta{font-size:12px;color:#7c8aa0}
+main.post{background:#fff;border-radius:10px;padding:30px 34px;margin:22px 0;box-shadow:0 2px 10px rgba(20,40,80,.06)}
+main.post h1{font-size:26px}
+main.post h2{font-size:20px;margin-top:32px;padding-left:10px;border-left:4px solid #2f6fd0}
+main.post h3{font-size:16px}
+main.post a{color:#2f6fd0;word-break:break-all}
+footer{background:#16233a;color:#93a5c0;margin-top:40px;padding:24px 0;font-size:13px}
+footer a{color:#8fb8e8}
+</style></head>
+<body><header class="top"><div class="wrap"><h1 class="site">AI绘画实验室</h1><div class="tag">不会画画也能出好图</div></div></header>
+<div class="wrap"><nav class="crumbs"><a href="index.html">首页</a> › AI绘画入门:提示词怎么写</nav><main class="post"><h1>AI绘画入门:提示词怎么写</h1>
+<p>很多刚接触AI绘画的朋友，第一反应往往是：“只要我描述得足够详细，就能画出我想要的图。”于是，大家习惯性地堆砌形容词，写下一大段冗长的文字，结果生成的图片要么构图混乱，要么风格完全不对。其实，AI不是读心术大师，它更像是一个听话但缺乏常识的实习生。你给它模糊的指令，它就只能给出模糊的执行结果。</p>
+<p>要写出高效的提示词（Prompt），核心逻辑其实只有三个维度：<strong>主体、环境、风格</strong>。今天我就把自己踩过的坑和总结出的实用公式分享出来，帮你从“随机抽卡”变成“精准控制”。</p>
+<h3>一、 主体描述：不要只说“是什么”，要说“长什么样”</h3>
+<p>初学者最容易犯的错误就是只写“一个女孩”或“一只猫”。AI会随机生成任何一个女孩或猫，这显然不是你想要的。你需要拆解主体的特征。</p>
+<p>以“一只猫”为例，如果你想要一只高冷的黑猫，提示词应该包含：</p>
+<ul>
+<li><strong>基础特征</strong>：黑色短毛猫</li>
+<li><strong>表情/状态</strong>：眼神犀利，半眯着眼，表情冷漠</li>
+<li><strong>动作</strong>：坐在窗台上，尾巴轻轻摆动</li>
+<li><strong>细节</strong>：金色的瞳孔，毛发光泽感强</li>
+</ul>
+<p>组合起来就是：“一只黑色短毛猫，眼神犀利，半眯着眼，表情冷漠，坐在窗台上，尾巴轻轻摆动，金色的瞳孔，毛发光泽感强。”</p>
+<p>这里有一个小技巧：<strong>先大后小</strong>。先描述整体形态，再描述局部细节。如果主体是人物，建议按照“发型/发色 -&gt; 面部特征 -&gt; 服装 -&gt; 姿态/表情”的顺序来写。例如：“长发，深棕色卷发，精致五官，穿着白色丝绸衬衫，双手交叉抱胸，自信微笑。”</p>
+<h3>二、 环境与光影：赋予画面故事感</h3>
+<p>画面空荡荡的主体往往显得孤立无援。环境（Background/Environment）和光影（Lighting）是提升画面质感的关键。</p>
+<p><strong>1. 环境要具体</strong></p>
+<p>不要只写“在森林里”，试着写“在清晨的迷雾森林中，阳光透过树叶洒下光斑，地面铺满落叶”。越具体的环境描述，AI生成的场景越真实。</p>
+<p><strong>2. 光影决定氛围</strong></p>
+<p>光影是AI绘画中的“情绪开关”。</p>
+<ul>
+<li><strong>柔和氛围</strong>：使用 <code>soft lighting</code>（柔光）、<code>diffused light</code>（漫射光）、<code>golden hour</code>（黄金时刻）。</li>
+<li><strong>强烈对比</strong>：使用 <code>dramatic lighting</code>（戏剧性光照）、<code>rim light</code>（轮廓光）、<code>chiaroscuro</code>（明暗对照法）。</li>
+<li><strong>特定光源</strong>：<code>neon lights</code>（霓虹灯）、<code>candle light</code>（烛光）、<code>moonlight</code>（月光）。</li>
+</ul>
+<p>举个例子，如果你画一个赛博朋克风格的角色，加上 <code>neon lights, cyberpunk city background, rain reflection on street</code>（霓虹灯，赛博朋克城市背景，街道上的雨水倒影），画面的层次感和科技感瞬间就出来了。</p>
+<h3>三、 风格与媒介：告诉AI“用哪种笔刷”</h3>
+<p>这是区分“照片级真实”和“艺术画作”的关键。AI需要知道你是想要一张照片，还是一幅油画、插画或3D渲染图。</p>
+<ul>
+<li><strong>写实摄影</strong>：<code>photorealistic</code>（照片级真实）、<code>8k resolution</code>（8k分辨率）、<code>raw photo</code>（原始照片）、<code>shot on iPhone</code>（iPhone拍摄，增加真实感）。</li>
+<li><strong>插画/二次元</strong>：<code>anime style</code>（动漫风格）、<code>cel shading</code>（赛璐璐上色）、<code>studio ghibli style</code>（吉卜力风格）、<code>2d illustration</code>（2D插画）。</li>
+<li><strong>艺术风格</strong>：<code>oil painting</code>（油画）、<code>watercolor</code>（水彩）、<code>ink wash</code>（水墨）、<code>pop art</code>（波普艺术）。</li>
+<li><strong>3D渲染</strong>：<code>3d render</code>、<code>blender</code>、<code>octane render</code>（Octane渲染器）、<code>unreal engine 5</code>（虚幻引擎5）。</li>
+</ul>
+<p><strong>注意</strong>：风格词通常放在提示词的末尾，或者作为权重较高的部分。如果你想要混合风格，可以尝试 <code>cyberpunk meets watercolor</code>（赛博朋克结合水彩），效果往往出奇地好。</p>
+<h3>四、 参数与权重：微调你的作品</h3>
+<p>除了文字描述，大多数AI绘画工具（如Midjourney、Stable Diffusion）都支持参数调整。</p>
+<ul>
+<li><strong>宽高比</strong>：在Midjourney中，使用 <code>--ar 16:9</code> 可以生成宽屏电影感画面，<code>--ar 1:1</code> 适合头像或方形构图。</li>
+<li><strong>风格化程度</strong>：在Midjourney中，<code>--stylize</code>（或简称 <code>--s</code>）参数可以控制AI的“发挥空间”。数值越低（如100），画面越忠实于你的描述；数值越高（如1000），画面越艺术化，但可能偏离原意。建议从350开始尝试。</li>
+<li><strong>负面提示词</strong>：这是很多人忽略但极其重要的一环。你可以告诉AI“不要画什么”。例如：<code>blurry</code>（模糊）、<code>low quality</code>（低质量）、<code>deformed hands</code>（变形的手）、<code>extra fingers</code>（多余的手指）。把负面提示词放在 <code>Negative Prompt</code> 框里，能显著减少废片率。</li>
+</ul>
+<h3>五、 一个高效的提示词结构模板</h3>
+<p>为了方便记忆，我总结了一个通用的“万能公式”：</p>
+<p>&gt; <strong>[主体描述] + [环境/背景] + [光影/氛围] + [风格/媒介] + [画质/参数]</strong></p>
+<p><strong>实战案例：</strong></p>
+<p>我想生成一张适合做自媒体封面的图片，主题是“深夜加班的程序员”。</p>
+<ol>
+<li><strong>主体</strong>：年轻男性，戴黑框眼镜，穿着格子衬衫，表情疲惫但专注，手指在键盘上敲击。</li>
+<li><strong>环境</strong>：昏暗的房间，背景是模糊的代码屏幕，桌上有一杯咖啡。</li>
+<li><strong>光影</strong>：屏幕发出的冷蓝光打在脸上，形成强烈的明暗对比。</li>
+<li><strong>风格</strong>：写实摄影，电影感，浅景深（背景虚化）。</li>
+<li><strong>参数</strong>：8k分辨率，高细节。</li>
+</ol>
+<p><strong>最终提示词：</strong></p>
+<p><code>A young male programmer wearing black-rimmed glasses and a plaid shirt, looking tired but focused, typing on a keyboard. Dim room, blurred code screens in background, a cup of coffee on the desk. Cold blue light from the screen illuminating his face, strong contrast. Photorealistic, cinematic, shallow depth of field, 8k, high detail.</code></p>
+<h3>六、 给新手的建议：多试错，善用工具</h3>
+<p>写提示词就像写作一样，需要不断的迭代。不要指望一次就完美。你可以先生成几张图，看看哪里不对，然后针对性地修改提示词。比如手画坏了，就在负面提示词里加强“deformed hands”的权重；颜色不对，就调整光影描述。</p>
+<p>如果你刚开始尝试，觉得构思提示词有点吃力，或者想快速体验一下AI绘画的效果，可以试试我最近常用来辅助创作的工具：<strong><a href="https://ai.vvvsnnn.com" target="_blank" rel="noopener">ai.vvvsnnn.com</a></strong>。这是一个免费的一站式AI助手平台，不仅支持AI绘画，还有聊天、写作和视频生成功能。最棒的是，它无需注册即可体验，非常适合我们这种想先看看效果、再决定要不要深入学习的“小白”用户。我在上面用过它的AI绘画功能，输入中文提示词就能直接出图，对新手非常友好，能帮你快速理解提示词和画面效果之间的对应关系。</p>
+<p>总之，AI绘画入门并不难，难的是打破对“完美描述”的执念。从今天开始，试着用结构化的方式去拆解你想画的画面，多动手，多观察，你会发现AI其实是一个非常有才华的合作伙伴。</p></main></div>
+<footer><div class="wrap">© 2026 AI绘画实验室 · 本站为独立博客, 内容均为编辑实测原创 · <a href="about.html">关于我们</a> · 友情链接: <a href="https://ai.vvvsnnn.com" target="_blank" rel="noopener">小白AI助手</a></div></footer></body></html>
