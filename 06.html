@@ -13,18 +13,34 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		
 <style>
-.promo-inline{margin:28px 0;padding:20px 24px;border:2px solid #f56a6a;border-radius:8px;background:#fff5f5;box-shadow:0 4px 14px rgba(245,106,106,.15)}
+a{color:#8a6ae8}
+#header .logo strong{color:#8a6ae8}
+#menu ul li a:hover{color:#8a6ae8}
+.button{border-color:#8a6ae8;color:#8a6ae8!important}
+.button:hover{background:#8a6ae8;color:#fff!important;border-color:#8a6ae8}
+.tagchip{display:inline-block;padding:3px 12px;margin:3px 4px 3px 0;border:1.5px solid #8a6ae8;border-radius:20px;font-size:.82em;color:#8a6ae8;text-decoration:none}
+.tagchip:hover{background:#8a6ae8;color:#fff!important}
+.promo-inline{margin:28px 0;padding:20px 24px;border:2px solid #8a6ae8;border-radius:8px;background:#f5f2fd;box-shadow:0 4px 14px rgba(0,0,0,.08)}
 .promo-inline p{margin:0 0 12px;font-size:1.06em;line-height:1.7}
-.promo-inline p a{font-weight:700;color:#f56a6a;border-bottom:2px solid #f56a6a}
-.promo-go{display:inline-block;background:#f56a6a;color:#fff!important;padding:10px 24px;border-radius:6px;text-decoration:none;font-weight:700;border-bottom:none!important;font-size:.95em}
-.promo-go:hover{background:#d94a4a}
+.promo-inline p a{font-weight:700;color:#8a6ae8;border-bottom:2px solid #8a6ae8}
+.promo-go{display:inline-block;background:#8a6ae8;color:#fff!important;padding:10px 24px;border-radius:6px;text-decoration:none;font-weight:700;border-bottom:none!important;font-size:.95em}
+.promo-go:hover{filter:brightness(.88)}
 .promo-go::before{content:"🎁 "}
 .sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:10000;background:rgba(47,52,60,.97);color:#fff;display:flex;align-items:center;justify-content:center;gap:16px;padding:12px 16px;font-size:.95em;box-shadow:0 -2px 12px rgba(0,0,0,.25)}
 .sticky-cta span{opacity:.92}
-.sticky-cta a{background:#f56a6a;color:#fff!important;padding:8px 22px;border-radius:6px;text-decoration:none;font-weight:700;border-bottom:none!important;white-space:nowrap}
-.sticky-cta a:hover{background:#d94a4a}
+.sticky-cta a{background:#8a6ae8;color:#fff!important;padding:8px 22px;border-radius:6px;text-decoration:none;font-weight:700;border-bottom:none!important;white-space:nowrap}
+.sticky-cta a:hover{filter:brightness(.88)}
 body.has-cta{padding-bottom:64px}
-@media(max-width:736px){.sticky-cta{font-size:.85em;gap:10px}.sticky-cta a{padding:7px 14px}}
+#toTop{position:fixed;right:22px;bottom:76px;z-index:9999;background:#8a6ae8;color:#fff!important;padding:8px 14px;border-radius:8px;font-size:.85em;text-decoration:none;opacity:.9;border-bottom:none!important}
+#toTop:hover{opacity:1}
+.thumb{border-radius:6px;overflow:hidden;display:block;margin-bottom:12px}
+.thumb img{width:100%;height:auto;display:block}
+.post-thumb{margin:0 0 24px;border-radius:8px;overflow:hidden}
+.post-thumb img{width:100%;height:auto;display:block}
+.searchbox{margin:0 0 26px}
+.searchbox input{width:100%;padding:12px 18px;border:2px solid #8a6ae8;border-radius:8px;font-size:1em;background:#fff}
+.readtime{color:#7f888f;font-size:.85em}
+@media(max-width:736px){.sticky-cta{font-size:.85em;gap:10px}.sticky-cta a{padding:7px 14px}#toTop{bottom:70px;right:14px}}
 </style>
 
 	</head>
@@ -40,7 +56,7 @@ body.has-cta{padding-bottom:64px}
 							<li><a href="https://ai.vvvsnnn.com" target="_blank" rel="noopener">友情链接</a></li>
 						</ul>
 					</header>
-					<section><header class="major"><h1 style="font-size:1.9em">免费AI绘图工具体验报告</h1><p style="color:#7f888f">2026-09-15 · AI绘画实验室</p></header><h1>免费AI绘图工具体验报告</h1>
+					<section><header class="major"><h1 style="font-size:1.9em">免费AI绘图工具体验报告</h1><p class="readtime">2026-09-15 · AI绘画实验室 · 约6分钟读完 · <a class="tagchip" href="tag3.html">工具实测</a></p></header><div class="post-thumb"><img src="assets/thumbs/06.jpg" alt="" /></div><h1>免费AI绘图工具体验报告</h1>
 <p>作为一个每天和像素打交道的平面设计师，最近半年我最大的感受就是：AI绘图工具迭代的速度，快得让人有点焦虑。上周还在用Midjourney V5.2调参，这周Stable Diffusion的新模型又发布了。对于像我们这样既想尝鲜新技术，又不想每个月支付几十美元订阅费的设计师来说，“免费”且“好用”的AI绘图工具简直是救命稻草。</p>
 <p>过去两周，我专门抽时间，把市面上主流的几款免费（或拥有大量免费额度）的AI绘图工具都跑了一遍。不是那种只看官网宣传图的云体验，而是真正为了出图、为了做设计稿去实测。今天就把这份包含“踩坑记录”和“实操技巧”的体验报告分享给你们，希望能帮大家省下不少摸索的时间。</p>
 <h2>第一梯队：Stable Diffusion 本地部署与在线版</h2>
@@ -81,7 +97,7 @@ body.has-cta{padding-bottom:64px}
 </ol>
 <h2>写在最后</h2>
 <p>AI绘画工具还在快速进化，今天的神器明天可能就被迭代。但有一点是确定的：工具只是辅助，你的审美和创意才是核心。AI可以帮你在一分钟内生成100种构图，但决定哪一张能打动用户的，依然是你。</p>
-<p>希望这份报告能帮你少走一些弯路。如果你也是被AI绘画困扰的“打工人”，不妨试试我上面提到的那些免费或低门槛工具，说不定下一个爆款封面图，就诞生在你的提示词里。</p></section>
+<p>希望这份报告能帮你少走一些弯路。如果你也是被AI绘画困扰的“打工人”，不妨试试我上面提到的那些免费或低门槛工具，说不定下一个爆款封面图，就诞生在你的提示词里。</p></section><section><header class="major"><h2>相关阅读</h2></header><div class="posts"><article><a href="01.html" class="thumb"><img src="assets/thumbs/01.jpg" alt="AI绘画入门:提示词怎么写" loading="lazy" /></a><h3><a href="01.html" style="border:none">AI绘画入门:提示词怎么写</a></h3><p>AI绘画入门:提示词怎么写 很多刚接触AI绘画的朋友，第一反应往往是：“只要我描述得足够详细，就能画出我想要的图。”于是，大家习惯性地堆砌形容词，写下一大段冗长的文字，结果生成的图片要么构图混乱，要么风格完全不对。其实，…</p><p><a class="tagchip" href="tag1.html">提示词</a> <span class="readtime">2026-09-17 · 约7分钟</span></p><ul class="actions"><li><a href="01.html" class="button">阅读全文</a></li></ul></article><article><a href="02.html" class="thumb"><img src="assets/thumbs/02.jpg" alt="AI生成商品图的实战技巧" loading="lazy" /></a><h3><a href="02.html" style="border:none">AI生成商品图的实战技巧</a></h3><p>AI生成商品图的实战技巧 做电商或者自媒体运营的朋友都知道，一张高质感的商品图，往往决定了点击率的上限。过去，为了拍出一张有氛围感的产品照，我们需要租赁影棚、购买昂贵的灯光设备，甚至还要找专业的摄影师和修图师，一套流程走…</p><p><a class="tagchip" href="tag2.html">风格教程</a> <span class="readtime">2026-09-17 · 约5分钟</span></p><ul class="actions"><li><a href="02.html" class="button">阅读全文</a></li></ul></article></div></section>
 				</div>
 			</div>
 			<div id="sidebar">
@@ -90,6 +106,9 @@ body.has-cta{padding-bottom:64px}
 						<header class="major"><h2>导航</h2></header>
 						<ul>
 							<li><a href="index.html">首页</a></li>
+							<li><a href="tag1.html">🏷 提示词</a></li>
+<li><a href="tag2.html">🏷 风格教程</a></li>
+<li><a href="tag3.html">🏷 工具实测</a></li>
 							<li><a href="about.html">关于我们</a></li>
 							<li><a href="https://ai.vvvsnnn.com" target="_blank" rel="noopener">友情链接: 小白AI助手</a></li>
 						</ul>
@@ -122,6 +141,7 @@ body.has-cta{padding-bottom:64px}
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
-		<div class="sticky-cta"><span>本文提到的工具：<strong>小白AI助手</strong>（免费 · 无需注册）</span><a href="https://ai.vvvsnnn.com" target="_blank" rel="noopener">立即体验 →</a></div>
+		
+		<div class="sticky-cta"><span>本文提到的工具：<strong>小白AI助手</strong>（免费 · 无需注册）</span><a href="https://ai.vvvsnnn.com" target="_blank" rel="noopener">立即体验 →</a></div><a id="toTop" href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">↑ 顶部</a>
 	</body>
 </html>
