@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI绘画风格词词典(写实篇) - AI绘画实验室</title>
+<meta name="description" content="AI绘画风格词词典写实篇 很多人都在问，为什么同样的提示词，Midjourney或Stable Diffusion生成的图片有的像“塑料人”，有的却真实得让人误以为是单反相机拍出来的？其实，核心差异往往不在模型本身，而在于你是否掌握了写实风…">
+<style>
+body{margin:0;background:#f4f6f9;color:#1c2430;font:15px/1.75 -apple-system,'PingFang SC',sans-serif}
+header.top{background:#16233a;color:#fff;padding:34px 0}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+h1.site{font-size:30px;margin:0;letter-spacing:1px}
+.tag{color:#8fb8e8;margin-top:8px}
+nav.crumbs{font-size:13px;margin:16px 0}
+nav.crumbs a{color:#2f6fd0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px;margin:22px 0}
+article.card{background:#fff;border-radius:10px;padding:20px;box-shadow:0 2px 10px rgba(20,40,80,.07);border-top:3px solid #2f6fd0}
+article.card h2{margin:0 0 8px;font-size:18px}
+article.card h2 a{color:#16233a;text-decoration:none}
+article.card h2 a:hover{color:#2f6fd0}
+.meta{font-size:12px;color:#7c8aa0}
+main.post{background:#fff;border-radius:10px;padding:30px 34px;margin:22px 0;box-shadow:0 2px 10px rgba(20,40,80,.06)}
+main.post h1{font-size:26px}
+main.post h2{font-size:20px;margin-top:32px;padding-left:10px;border-left:4px solid #2f6fd0}
+main.post h3{font-size:16px}
+main.post a{color:#2f6fd0;word-break:break-all}
+footer{background:#16233a;color:#93a5c0;margin-top:40px;padding:24px 0;font-size:13px}
+footer a{color:#8fb8e8}
+</style></head>
+<body><header class="top"><div class="wrap"><h1 class="site">AI绘画实验室</h1><div class="tag">不会画画也能出好图</div></div></header>
+<div class="wrap"><nav class="crumbs"><a href="index.html">首页</a> › AI绘画风格词词典(写实篇)</nav><main class="post"><h1>AI绘画风格词词典(写实篇)</h1>
+<p>很多人都在问，为什么同样的提示词，Midjourney或Stable Diffusion生成的图片有的像“塑料人”，有的却真实得让人误以为是单反相机拍出来的？其实，核心差异往往不在模型本身，而在于你是否掌握了<strong>写实风格的“语法”</strong>。</p>
+<p>写实风格（Realism）是AI绘画中最具欺骗性，也最容易“翻车”的领域。一旦参数控制不好，皮肤会过曝，眼神会呆滞，或者出现那种诡异的“数字艺术感”。经过上百次的测试和对比，我整理了一份专门针对写实风格的风格词词典，并附上具体的搭配逻辑，希望能帮你彻底摆脱“AI味”。</p>
+<h3>一、 光影是写实的灵魂</h3>
+<p>在摄影中，光影决定了画面的质感。在AI提示词中，你不能只写“lighting”，你需要指定光源的性质和方向。</p>
+<ol>
+<li><strong>自然光系</strong></li>
+</ol>
+<p>    *   <code>Natural lighting</code>：基础自然光，适合日常场景，但容易平淡。</p>
+<p>    *   <code>Soft natural light</code>：柔和自然光，适合人像特写，能弱化瑕疵，营造温柔氛围。</p>
+<p>    *   <code>Golden hour</code>：黄金时刻，即日出或日落前的半小时。这个词能瞬间提升画面的暖色调和立体感，是风景和人像的“神器”。</p>
+<p>    *   <code>Blue hour</code>：蓝调时刻，适合城市夜景或冷色调情绪片，自带高级感。</p>
+<p>    <strong>实操建议</strong>：如果你画室内人像，尝试加上 <code>window light, soft shadow</code>（窗光，柔和阴影），这能模拟出侧逆光的效果，让人物轮廓更清晰。</p>
+<ol>
+<li><strong>人造光/特效光</strong></li>
+</ol>
+<p>    *   <code>Studio lighting</code>：影棚布光，干净、均匀，适合产品摄影或时尚大片。</p>
+<p>    *   <code>Cinematic lighting</code>：电影感布光，通常伴随高对比度和戏剧性的阴影，适合叙事性强的画面。</p>
+<p>    *   <code>Neon glow</code>：霓虹发光，赛博朋克或夜景必备，注意要搭配 <code>cyberpunk</code> 或 <code>urban night</code> 使用，否则容易变成单纯的发光物体。</p>
+<p>    *   <code>Volumetric lighting</code>：体积光（丁达尔效应）。这个词非常关键，它能表现出光线穿过灰尘、烟雾时的光束感，极大增强画面的空间深度。</p>
+<h3>二、 镜头与构图决定视角</h3>
+<p>很多新手只写“a man standing in a park”，结果AI生成了一张平铺直叙的贴纸图。加入镜头语言，画面立马就有了“相机感”。</p>
+<ol>
+<li><strong>镜头焦距</strong></li>
+</ol>
+<p>    *   <code>85mm lens</code>：人像黄金焦段。虚化背景，突出主体，适合半身或特写。</p>
+<p>    *   <code>35mm lens</code>：人文纪实焦段。视野稍广，保留更多环境信息，适合街拍。</p>
+<p>    *   <code>24mm wide angle</code>：广角。适合建筑、大场景，边缘会有轻微畸变，增强视觉冲击力。</p>
+<p>    *   <code>Macro lens</code>：微距镜头。用于极近距离的细节特写，如水滴、昆虫、皮肤纹理。</p>
+<ol>
+<li><strong>拍摄参数</strong></li>
+</ol>
+<p>    *   <code>Shallow depth of field</code> / <code>Bokeh</code>：浅景深/背景虚化。这是区分“照片”和“插画”的关键。写实风格中，背景适度虚化能让主体更突出。</p>
+<p>    *   <code>High dynamic range (HDR)</code>：高动态范围。保留亮部细节的同时不丢失暗部信息，画面通透。</p>
+<p>    *   <code>ISO 100</code>：低感光度。暗示画面干净、无噪点，适合明亮场景。如果追求胶片感，可以写 <code>ISO 400, film grain</code>（胶片颗粒）。</p>
+<h3>三、 材质与细节：拒绝塑料感</h3>
+<p>“塑料感”源于AI对物体表面反射理解的偏差。你需要通过词汇强制AI去渲染表面的微观细节。</p>
+<ul>
+<li><strong>皮肤/生物</strong></li>
+</ul>
+<p>    *   <code>Pores</code>：毛孔。加上这个词，皮肤立刻变得真实可触。</p>
+<p>    *   <code>Subsurface scattering</code>：次表面散射。这是皮肤质感的物理基础，能让光线穿透皮肤边缘，呈现红润半透明的感觉，而非死板的实心色块。</p>
+<p>    *   <code>Fine details</code>：细节丰富。万能词，但最好具体化，如 <code>fine skin texture</code>（细腻皮肤纹理）。</p>
+<ul>
+<li><strong>物体/材质</strong></li>
+</ul>
+<p>    *   <code>Glossy</code> vs <code>Matte</code>：光泽 vs 哑光。金属用 <code>brushed metal</code>（拉丝金属）或 <code>polished chrome</code>（抛光铬），布料用 <code>linen texture</code>（亚麻纹理）或 <code>silk sheen</code>（丝绸光泽）。</p>
+<p>    *   <code>Weathered</code>：风化的。用于建筑、石头、旧车，增加岁月的痕迹，避免画面过于“新”和“假”。</p>
+<p>    *   <code>Rust</code>：锈迹。工业风必备，增加粗糙感。</p>
+<h3>四、 风格化写实：给照片加一点“味道”</h3>
+<p>纯写实有时显得干瘪，加入一点风格化词汇，能让画面更有艺术张力。</p>
+<ul>
+<li><code>Documentary style</code>：纪实风格。强调客观、真实，构图往往不那么完美，但更有故事感。</li>
+<li><code>Editorial photography</code>：编辑摄影。时尚杂志常用，讲究构图严谨、光影考究。</li>
+<li><code>Lo-fi</code>：低保真。带有一点噪点、模糊和复古色彩，适合营造怀旧或忧郁氛围。</li>
+<li><code>Hyper-realism</code>：超写实。比真实更真实，细节极其夸张，常用于商业广告。</li>
+</ul>
+<h3>五、 组合实战与工具推荐</h3>
+<p>理解了这些词汇，如何高效组合？这里分享一个我常用的<strong>“写实人像公式”</strong>：</p>
+<p>&gt; <code>[主体描述] + [动作/表情] + [环境] + [镜头参数] + [光影] + [画质/细节修饰]</code></p>
+<p><strong>示例提示词：</strong></p>
+<p><code>A young woman with freckles, smiling gently, sitting by a large window in a cozy cafe, 85mm lens, f/1.8, soft natural light from the left, golden hour, shallow depth of field, bokeh, high resolution, 8k, realistic skin texture, detailed pores, cinematic composition.</code></p>
+<p>你会发现，当把“85mm镜头”、“f/1.8光圈”、“左侧柔光”和“皮肤毛孔细节”组合在一起时，AI生成的图片就会呈现出一种强烈的“摄影现场感”，而不是普通的数字绘画。</p>
+<p>对于很多刚开始接触AI绘画的朋友，手动调试这些参数确实需要大量的时间成本。如果你不想每次都去查词典，或者对英文提示词感到头疼，我推荐你去试试 <a href="https://ai.vvvsnnn.com" target="_blank" rel="noopener">小白AI乐园</a>。</p>
+<p>这是一个非常友好的一站式AI助手平台，它不仅支持聊天和写作，最棒的是它的AI绘画功能对新手非常包容。你只需要用中文描述你想要的画面，比如“一个在雨天喝咖啡的忧郁女孩，电影感，特写”，它就能自动帮你补全那些专业的风格词和镜头参数。而且无需注册即可体验，对于想快速看到效果、不想纠结于复杂Prompt语法的设计师或自媒体人来说，能节省大量试错时间。</p>
+<h3>六、 最后的避坑指南</h3>
+<ol>
+<li><strong>少即是多</strong>：不要把所有形容词都堆上去。写实风格中，过多的修饰词会导致画面元素打架。专注于“光影”和“镜头”这两个核心维度，其他细节让AI自己发挥。</li>
+<li><strong>负面提示词（Negative Prompt）很重要</strong>：在写实风格中，务必加上 <code>cartoon, anime, painting, drawing, illustration, plastic, smooth skin, deformed hands</code> 等词汇，明确告诉AI“不要做什么”。</li>
+<li><strong>后期处理</strong>：AI生成的写实图片往往对比度偏高，建议在PS中适当降低对比度，增加一点颗粒感（Noise），并微调白平衡，这样“去AI味”的效果立竿见影。</li>
+</ol>
+<p>掌握这些风格词，只是迈出了第一步。真正的写实，是对生活细节的敏锐观察。多拍照片，多观察真实世界的光影变化，然后尝试用AI去还原它，这才是通往高阶AI绘画的道路。</p></main></div>
+<footer><div class="wrap">© 2026 AI绘画实验室 · 本站为独立博客, 内容均为编辑实测原创 · <a href="about.html">关于我们</a> · 友情链接: <a href="https://ai.vvvsnnn.com" target="_blank" rel="noopener">小白AI助手</a></div></footer></body></html>
