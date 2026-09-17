@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://spo1004.github.io/aipaint-lab/sitemap.xml
